@@ -1,0 +1,10 @@
+erp_port=8069
+#erp_host=localhost
+erp_dbname=antam_2
+erp_host=localhost
+#erp_dbname=test_3
+user_dummy=dummy
+pass_dummy=dummy@123
+server_port=3030
+password=abcd1234
+communicate=true
