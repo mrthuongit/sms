@@ -1,0 +1,27 @@
+<div class="add-row-editable-table">
+  <button class="btn btn-primary" ng-click="openNewMms()">Tạo tin nhắn mới</button>
+</div>
+<table class="table table-bordered table-hover table-condensed">
+  <tr>
+    <td>#</td>
+    <td>Nội dung tin nhắn</td>
+    <td>Số điện thoại</td>
+    <td>Trạng thái</td>
+  </tr>
+  <tr ng-repeat="mms in listMms" class="editable-row">
+    <td>
+        {{$index}}
+    </td>
+    <td>
+        {{mms.body}}
+    </td>
+    <td>
+        {{mms.phones}}
+    </td>
+    <td>
+        <span ng-show="mms.state =='open'" style="color: red;">Chưa gửi</span>
+        <span ng-show="mms.state =='done'" style="color: green;">Đã gửi</span>
+    </td>
+    
+  </tr>
+</table>
